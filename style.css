@@ -71,14 +71,31 @@ hr {
     flex-wrap: nowrap;
     margin: 0 auto;
     gap: 10px;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    max-width: 930px;
+    max-width: 950px;
     padding-top: 40px;
     padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.5) transparent;
 }
 
+
+
+.cards-layout:hover {
+    overflow-x: auto;
+}
+
+
+.cards-layout::-webkit-scrollbar {
+    background: transparent;
+}
+
+.cards-layout::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
 
 
 .info-card {
@@ -87,10 +104,10 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding-top: 15px;
+    /* padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 30px; */
     
     
 }
@@ -99,10 +116,21 @@ hr {
     opacity: 1;
     
 }
+
 .info-card img {
-    width: 200px;
-    height: 80px;
-    /* object-fit: contain; */
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    width: 250px;
+    height: 100px;
+}
+
+.image-container {
+    
+    
+    overflow: hidden;
+    
+
 }
 
 .card-description {
