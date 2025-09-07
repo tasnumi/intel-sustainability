@@ -162,6 +162,13 @@ hr {
 }
 
 @media (max-width: 600px) {
+
+    .hero-section p {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 350px;
+    }
+
     .cards-layout {
         flex-direction: column;
         justify-content: center;
@@ -169,5 +176,14 @@ hr {
         margin-top: 30px;
         
     }
+
+    .info-card img {
+        aspect-ratio: 16/9;
+    }
     
+    .scroll-text {
+        margin: 0 auto;
+        max-width: 280px;
+        padding: 50px 10px 10px 10px;
+    }
 }
