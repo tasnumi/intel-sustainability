@@ -20,49 +20,59 @@ body {
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
-    gap: 40px; 
+    gap: 20px; 
     
 }
 
 .hero-section h1 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Chivo", sans-serif;
     font-size: 50px;
     font-weight: bold;
-    letter-spacing: 2.5px;
-    
-    max-width: 350px;
+    text-transform: uppercase;
+    max-width: 500px;
     color: white;
 }
 
-h2 {
-    color: var(--bottom);
-}
-
-h3 {
-    font-weight: bold;
-    color: rgb(71, 71, 71);
-}
-
-p {
-    font-family: "Open Sans", sans-serif;
-}
-
-hr {
-   width: 100px;
-   
-    
+.hero-section p {
+    max-width: 460px;
+    line-height: 1.5;
+    color: white;
+    padding-top: 15px;
 }
 
 .hero-section img {
     width: 100px;
 }
 
-.hero-section p {
-    max-width: 420px;
-    line-height: 1.5;
-    color: white;
-    padding-top: 15px;
+
+h2 {
+    /* font-family: "Manrope", sans-serif; */
+    
+    font-family: "Tinos", serif;
+    color: var(--bottom);   
 }
+
+h3 {
+    font-size: 1.1em;
+    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+    font-weight: 700;
+    color: rgb(71, 71, 71);
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+hr {
+   width: 60px;
+   border: 1px solid var(--top);
+   
+    
+}
+
+
 
 .cards-layout {
     position: relative;
@@ -73,7 +83,7 @@ hr {
     overflow-x: hidden;
     scrollbar-gutter: stable;
     scroll-behavior: smooth;
-    max-width: 910px;
+    max-width: 980px;
     padding-top: 40px;
     padding-bottom: 20px;
     scrollbar-width: thin;
@@ -122,7 +132,7 @@ hr {
     object-fit: cover;
     object-position: center;
     overflow: hidden;
-    width: 180px;
+    width: 200px;
     height: 100%;
 }
 
@@ -156,6 +166,8 @@ hr {
 }
 
 .scroll-text {
+    color: var(--bottom);
+    font-weight: 700;
     text-align: center;
     margin-top: 20px;
     
