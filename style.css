@@ -4,7 +4,6 @@
     --top: #0096A7;
     --middle: #0286C2;
     --bottom: #005A8F;
-
 }
 
 body {
@@ -46,8 +45,6 @@ body {
 
 
 h2 {
-    /* font-family: "Manrope", sans-serif; */
-    
     font-family: "Tinos", serif;
     color: var(--bottom);   
 }
@@ -55,7 +52,6 @@ h2 {
 h3 {
     font-size: 1.1em;
     font-family: "Inter", sans-serif;
-    /* font-family: "Inter", sans-serif; */
     font-weight: 700;
     color: rgb(71, 71, 71);
 }
@@ -66,13 +62,9 @@ p {
 }
 
 hr {
-   width: 60px;
-   border: 1px solid var(--top);
-   
-    
+   width: 80px;
+   border: 3px solid #00c7fd;
 }
-
-
 
 .cards-layout {
     position: relative;
@@ -81,22 +73,20 @@ hr {
     margin: 0 auto;
     gap: 20px;
     overflow-x: hidden;
+    overflow-y: hidden;
     scrollbar-gutter: stable;
     scroll-behavior: smooth;
     max-width: 980px;
-    padding-top: 40px;
     padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     scrollbar-width: thin;
-    scrollbar-color: rgba(0,0,0,0.5) transparent;
-    transform: scale(1.05);
+    scrollbar-color: #005A8F transparent;
 }
-
-
 
 .cards-layout:hover {
     overflow-x: overlay;
 }
-
 
 .cards-layout::-webkit-scrollbar {
     background: transparent;
@@ -104,10 +94,9 @@ hr {
 }
 
 .cards-layout::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,0.5);
+    background: #005A8F;
     border-radius: 10px;
 }
-
 
 .info-card {
     position: relative;
@@ -119,13 +108,12 @@ hr {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);   
 }
 
 .info-card:hover .card-description{
     transform: scale(1.05);
     opacity: 1;
-    
 }
 
 .info-card img {
@@ -137,15 +125,11 @@ hr {
 }
 
 .image-container {
-    
     height: 100%;
     overflow: hidden;
-    
-
 }
 
 .card-description {
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -162,15 +146,13 @@ hr {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-    
 }
 
 .scroll-text {
     color: var(--bottom);
     font-weight: 700;
     text-align: center;
-    margin-top: 20px;
-    
+    margin-top: 20px; 
 }
 
 @media (max-width: 600px) {
@@ -181,12 +163,18 @@ hr {
         max-width: 350px;
     }
 
+    .hero-section h1 {
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .cards-layout {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
-        
+        margin-top: 40px;
+        margin-bottom: 0;
     }
 
     .info-card img {
@@ -196,6 +184,6 @@ hr {
     .scroll-text {
         margin: 0 auto;
         max-width: 280px;
-        padding: 50px 10px 10px 10px;
+        padding-bottom: 30px;
     }
 }
